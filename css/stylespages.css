@@ -1,0 +1,389 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "robotoregular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "robotothin";
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: "robotolight";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "robotobold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+/*header*/
+
+
+.headerlogo{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: 10%;
+    padding: 1rem;
+    padding-top: 0;
+    
+
+   
+}
+.headerlogo picture{
+    margin-left: 30px;
+}
+
+.headerlogo img:hover{
+    transform: scale(1.1);
+    transition: 250ms;    
+
+}
+
+.headerlogo h1{
+    font-size: 32px;
+    color: #183153;
+    font-family: "robotothin";
+    margin-left: 30px;
+    align-self: center;
+
+    
+}
+
+/*navbar*/
+
+.principalmenu{
+    display: flex;
+    justify-content:end;
+    height: 10%;
+    background-color: #183153;
+    font-family: "robotoregular";
+    font-size: medium;
+    position: relative;
+
+   
+
+}
+
+.principalmenu ul li{
+    display: inline-block;
+    height: 35px;
+    align-items: flex-end;
+    
+    
+    
+}
+
+.principalmenu li:hover{
+    transform: scale(1.1);
+}
+
+
+
+.principalmenu a{
+    color: #f8f8f8;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 30px;
+    justify-content: space-between; 
+}
+
+
+/*principal articles pages systems*/
+
+.principalarticle{
+    display: flex;
+    padding: 45px 0px 45px 45px;
+    border-top: #183153 1px solid;
+    border-bottom: #183153 1px solid;
+    margin-bottom: 40px;
+
+}
+
+
+.principalarticle h1{
+    font-family: "robotoregular";
+    font-size: 30px;
+    text-align: left;
+    color: rgb(46, 44, 44);
+
+}
+
+.principalarticle p{
+    font-family: "robotolight";
+    font-size: 20px;
+    color: rgb(46, 44, 44);
+    text-align: left;
+     
+}
+
+
+.principalarticle article{
+    margin-left: 5%;
+}
+
+.principalarticle img{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) and (min-width:577px) {
+    
+    .principalarticle article p{
+        columns: 2;
+        column-fill: auto;
+        column-gap: 75px;
+
+    }
+
+    .principalarticle picture img{
+        margin-top: 95px;
+        align-content: center;  
+    }
+       
+}
+
+@media screen and (max-width:576px) {
+
+    .principalarticle picture img{
+        margin-top: 300px;
+    }
+       
+   
+
+}
+
+#genitourinarypic img{
+    opacity: 0.8;
+}
+
+
+/*container*/
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto, 1fr);
+    gap: .5rem;
+    
+
+
+    
+}
+
+.item{
+    display: flex;
+    padding: 0.5rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #2e528b44;
+}
+
+.item p{
+    font-family: "robotolight";
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+    text-indent: 5px;
+    margin: 25px;
+    padding: 5px;
+
+}
+
+/*item image*/
+
+#item1{
+    justify-content: center;
+    background-color: rgba(238, 238, 238, 0.641);
+}
+
+
+#item1:hover{
+    transform: scale(1.2);
+    transition-delay: 250ms;
+    box-shadow: 8px 6px #1831534a;
+}
+
+#item1 img{
+    width: 95%;   
+}
+
+@media screen and (max-width:576px) {
+
+    #item1 img{
+        width: 90%;
+    }
+    #item1{
+        margin-bottom: 6%;
+    }
+    .item p{
+        text-align: justify;
+        padding: 15% 0%;
+        font-family: "robotoregular";
+        line-height: 25px;
+        text-indent: 0;
+    }
+    .item{
+        background-color: #aecd1260;
+    }
+       
+   
+
+}
+@media screen and (max-width: 768px) and (min-width:577px) {
+
+    #item1 img{
+        width: 90%;
+    }
+    #item1{
+        margin-bottom: 6%;
+    }
+    .item p{
+        text-align: justify;
+        padding: 15% 0%;
+        font-family: "robotoregular";
+        line-height: 25px;
+        text-indent: 0;
+    }
+    .item{
+        background-color: #f9d13160;
+    }
+       
+   
+
+}
+
+
+#item6 p{
+    text-align: end;
+    line-height: 30px;
+
+    
+
+    
+}
+
+
+/* menu2 */
+
+#menu ul {
+    list-style:none;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 230px;
+}
+   
+   /* anchor menu2 */
+   
+#menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:25px;
+    font-family:"robotoregular";
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+   
+   /* items menu2 */
+   
+#menu ul li {
+    position:relative;
+    float: left;
+    padding:15px;
+    background-color:#2e518b;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+   
+   /* hover menu2 */
+   
+#menu ul li:hover {
+    background:#5b78a7;
+}
+
+   /* menu2 dropdown */
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding: 0px;
+}
+   
+   /* items menu2 dropdown */
+   
+#menu ul ul li {
+    float:none;
+    padding: 0px 55px;
+    border-radius: 0%;
+    
+}
+   
+   /* anchor items menu2 dropdown */
+   
+#menu ul ul a {
+    line-height:120%;
+    padding: 10px 5px;
+}
+   
+   /* items menu2 dropdown hover */
+   
+#menu ul li:hover > ul {
+    display:block;
+}
+
+/*footer*/
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #183153;
+}  
+
+
+
+.footerlogo h1{
+    font-family: "robotolight";
+    color: #f8f8f8;
+    font-size: medium;
+    margin-left: 42px;
+    
+
+
+}
+
+.footerlogo ul li{
+    display: inline;
+    
+}
+
+.footerlogo ul li a{
+  list-style-type: none;
+  color: #f8f8f8;
+  text-decoration: none;
+  margin: 2.5px;
+  
+}
+
+.footersection {
+    color: #f8f8f8;
+    display: inline-block;
+    align-self: center;
+    margin-right: 42px;
+    font-family: "robotolight";
+    
+}
+

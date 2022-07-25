@@ -1,0 +1,527 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "robotoregular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "robotothin";
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: "robotolight";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "robotobold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+/*header*/
+
+.headerlogo{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: 10%;
+    padding: 1rem;
+    padding-top: 0;
+
+   
+}
+.headerlogo picture{
+    margin-left: 30px;
+}
+
+.headerlogo img:hover{
+    transform: scale(1.1);
+    transition: 250ms;    
+
+}
+
+.headerlogo h1{
+    font-size: 32px;
+    color: #183153;
+    font-family: "robotothin";
+    margin-left: 30px;
+    align-self: center;
+
+    
+}
+
+/*navbar*/
+
+.principalmenu{
+    display: flex;
+    justify-content:end;
+    height: 10%;
+    background-color: #183153;
+    font-family: "robotoregular";
+    font-size: medium;
+    position: relative;
+
+   
+
+}
+
+.principalmenu ul li{
+    display: inline-block;
+    height: 35px;
+    align-items: flex-end;
+    
+    
+    
+}
+
+.principalmenu li:hover{
+    transform: scale(1.1);
+}
+
+
+
+.principalmenu a{
+    color: #f8f8f8;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 30px;
+    justify-content: space-between; 
+}
+
+
+/*main*/
+
+.main{
+    display: flex;
+    height: 150px;
+    
+    
+}
+
+.principalarticle{
+    display: flex;
+    padding: 30px;
+    background-image: url(../IMAGENESANATOMIA/fondomusculos.png);
+    
+
+}
+  /*media query*/ 
+  /*tabletscreen*/
+@media screen and (max-width: 768px)  and (min-width:577px) {
+    .principalarticle {
+        background-color: #23262817;
+        background-image: none;
+    } 
+    
+}
+
+/*mobilescreen*/
+@media screen and (max-width:576px){
+    .principalarticle {
+        background-color: #f9d13160;
+        background-image: none;
+    } 
+
+}
+    
+
+
+.principalarticle h1{
+    font-family: "robotoregular";
+    font-size: 30px;
+    text-align: left;
+    color: rgb(46, 44, 44);
+   
+}
+
+#mainarticle{
+    width: 75%;
+}
+
+.principalarticle p{
+   
+    font-family: "robotoregular";
+    font-size: 20px;
+    color: rgb(46, 44, 44);
+    text-align: left;
+    margin-right: 45px;
+    
+ 
+    
+}
+.aditionalinfo {
+    align-self: center;
+    width: 25%;
+    padding: 40px;
+    padding-top: 0;
+    border-left: #183153 1px solid;
+
+   
+    
+
+    
+}
+.aditionalinfo h1{
+    
+    font-family: "robotothin";
+    font-size: 22px;
+    text-align: left;
+    color: rgb(46, 44, 44);
+}
+
+.aditionalinfo p{
+    font-size: 18px;
+    color: rgb(46, 44, 44);
+    text-align: left; 
+    
+}
+
+#search{
+    background-color:rgba(96, 97, 100, 0.484);
+    justify-content: center;
+    max-width: fit-content;
+    height: 30px;
+    margin-top: 15px;    
+    
+}
+
+@media screen and (max-width:576px) {
+
+ #search{
+     background-color:rgba(96, 97, 100, 0.484);
+     justify-content: center;
+     width:75px;
+     height: 30px;
+     margin-top: 15px;  
+    }
+    
+}
+
+@media screen and (max-width: 768px)  and (min-width:577px) {
+ #search{
+        background-color:rgba(96, 97, 100, 0.484);
+        justify-content: center;
+        width: 100px;
+        height: 30px;
+        margin-top: 15px;  
+    }
+    
+}
+
+
+
+
+
+/*title&subtitle grid container*/
+
+#start{
+    background-color: #183153;
+    text-align: center;
+    font-size: 45px;
+    padding: 2.5%;
+    font-family: "robotoregular";
+    color: #f8f8f8;
+}
+#choose{
+    font-family: "robotobold";
+    color: #183153;
+    text-align: center;
+    font-size: 28px;
+}
+
+/*grid-container*/
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 1rem;
+    font-family: "robotoregular";
+    margin-bottom: 16px;
+    
+}
+
+
+
+/*grid items*/
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.item{
+    background-color: rgba(79, 79, 79, 0.708);
+    border-radius: 10px;
+    font-size: 30px;
+    gap: 10px;
+    padding: 45px;
+}
+
+
+/*grid items animation*/
+
+.item a{
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+
+.item a span:first-child {
+    display: inline-block;
+    padding: 10px;
+  }
+
+.item a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+   
+.item a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+  }
+
+.item a span {
+    transition: transform 0.2s ease-out;
+  }
+   
+.item a:hover span:first-child {
+    transform: translateY(100%);
+  }
+   
+.item a:hover span:last-child {
+    transform: none;
+  }
+
+
+
+
+  /*footer*/
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #183153;
+}  
+
+
+
+.footerlogo h1{
+    font-family: "robotolight";
+    color: #f8f8f8;
+    font-size: medium;
+    margin-left: 42px;
+    
+
+
+}
+
+.footerlogo ul li{
+    display: inline;
+    
+}
+
+.footerlogo ul li a{
+  list-style-type: none;
+  color: #f8f8f8;
+  text-decoration: none;
+  margin: 2.5px;
+  
+}
+
+.footersection {
+    color: #f8f8f8;
+    display: inline-block;
+    align-self: center;
+    margin-right: 42px;
+    font-family: "robotolight";
+    
+}
+
+/*login*/
+
+.login{
+    display: inline-flex;
+      
+}
+
+.item-login{
+   
+  text-align: left;
+  align-self: center;
+  margin-left: 100px;
+
+  
+}
+
+.login h1{
+    font-family: "robotoregular";
+    font-size: 32px;
+    
+
+}
+
+.login form{
+    font-family: "robotolight";
+    position: static;
+
+    
+    
+   
+
+}
+
+.login h4{
+    font-family: "robotoregular";
+    font-size: 15px;
+    
+  
+}
+
+.login img{
+    border-radius: 10px;
+    width: 80%;
+    float: right;
+    border-left: #183153 2px solid;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    background-color: rgba(96, 97, 100, 0.484);
+    
+   
+}
+
+@media screen and (max-width:576px) {
+
+    .login img{
+        justify-content: center;
+        align-content: center;
+        width: 90%;
+        margin-top: 50%;
+        background-color:rgba(96, 97, 100, 0.484);
+    }
+}
+   
+@media screen and (max-width: 768px)  and (min-width:577px) {
+    .login img{
+        background-color:rgba(96, 97, 100, 0.484);
+        justify-content: center;
+        align-content: center;
+        width: 90%;
+        margin-top: 25%;
+        
+      
+    }
+}
+
+/*help*/
+.pagehelp{
+    display: flex;
+    font-family: "robotoregular";
+    padding: 150px;
+    color: #183153;
+    
+    
+}
+
+.pagehelp article{
+    background-color: #e4d65198;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.pagehelp h1{
+    font-size: 45px;
+    
+}
+
+.pagehelp h2{
+    font-size: 25px;
+   
+}
+
+.pagehelp p{
+    columns: 2;
+    text-align: left;
+    column-gap: 60px;
+    line-height: 25px;
+    
+}
+
+
+.contact{
+    display: flex;
+    font-family: "robotobold";
+    padding: 120px;
+    color: #183153;
+    background-image: url(../IMAGENESANATOMIA/pexels-buro-millennial-1438081.jpg);
+
+}
+
+
+@media screen and (max-width:576px) {
+
+    .contact{
+        background-color: #f9d13160;
+        background-image: none;
+        padding: 25px;
+     
+    }
+    .contactus{
+        background-color: #f8f8f8;
+        border-radius: 20px;
+        padding: 25px;
+
+    }
+}
+
+   
+@media screen and (max-width: 768px)  and (min-width:577px) {
+    .contact{
+        background-color: #f5df8960;
+        background-image: none;
+        padding: 25px;
+        padding-left: 35px;  
+    }
+
+    .contactus{
+        background-color: #f8f8f8;
+        border-radius: 20px;
+        padding: 25px;
+        padding-left: 35px;
+    }
+}
+
+.contactus{
+    background-color: #f8f8f882;
+    border-radius: 20px;
+    padding: 25px;
+    padding-left: 35px;
+}
+
+
+.contact h1{
+    font-size: 45px;
+    text-align: left;
+
+}
+
+.contact form{
+    font-family: "robotoregular";
+    line-height: 25px;
+    font-size: 18px;
+    
+}
